@@ -1,0 +1,12 @@
+<label>Login Woyy</label>
+<input
+  type="text"
+  class="form-control"
+  [(ngModel)]="username">
+<p>{{ username }}</p>
+<button
+  class="btn btn-primary"
+  [disabled]='checkUsername()'
+  (click)="onLogin()">Login</button>
+<p>{{ accountLogStatus }}</p>
+<p>{{ accountConfirm }}</p>
